@@ -12,7 +12,11 @@ project12 = "space_race"
 project13 = "gifgaf"
 project14 = "mainlv"
 project15 = "seven"
-
+project16 = "accumulator"
+project17 = "motor_spin"
+project18 = "sdc"
+project19 = "bspd"
+project20 = "coil_winder"
 
 function on(event, clicked_id) {
     if (event.target.id != "click"){
@@ -105,13 +109,12 @@ text1 = ["FSAE Charging Cart",
           "September 2021 - Current"];
 
 text2 = ["FSAE Shutdown Circuit Testing PCB", 
-          "I designed a PCB that was used to test the functionality of the Shutdown Circuit (SDC) and the Brake System Plausibility Device (BSPD) of the Columbia University Formula SAE club's electric vehicle. In short,\
+          "I designed a PCB that will be used to test the functionality of the Shutdown Circuit (SDC) and the Brake System Plausibility Device (BSPD) of the Columbia University Formula SAE club's electric vehicle. In short,\
           the SDC cuts power to the vehicle when a fault is detected that could be harmful to the driver, and the BSPD is a system that verifies the functionality of the brake and accelerator pedal. The testing PCB that I\
-          designed allowed the team to test these two circuits independently of the rest of the car, with the circuits receiving fake sensor signals through switches and potentiometers. In order to design this PCB, I had to\
+          designed will allow the team to test these two circuits independently of the rest of the car, with the circuits receiving simulated sensor signals through switches and potentiometers. In order to design this PCB, I had to\
           gain a complete understanding of both circuits and their physical PCBs. Then, I had to determine the most efficient way to simulate each sensor as a simple electronic component. Once I had all of this information, I\
           drew up a schematic on KiCad, verified the circuit's functionality with LTSpice simulation, and when I was finally pleased with the circuit, I designed the PCB for it on KiCad trying to make it as compact and logical\
-          as possible. I then ordered the PCB for delivery, and once the PCB was delivered, I used it to test the SDC and BSPD. The SDC had functioned as intended but the BSPD was faulty, so I had to use an oscilloscope to test\
-          each track and locate where the fault was on the BSPD. Once I found the problem, I made the required adjustments on KiCad.",
+          as possible. Once the SDC and BSPD circuits are assembled and ready, they will be tested on this PCB.",
           ["KiCad (PCB Design)", "LTSpice", "Electronics Testing", "Oscilloscopes"], 
           "The biggest difficulty that I faced doing this project was gaining a complete understanding of the SDC and BSPD circuits. I had taken this project on in the first week of joining the Columbia FSAE team and was not familiar\
           with these specific PCB designs yet. The documentation explaining the circuits was very lackluster and all I was given was a very generalized flow chart. As there were only a couple experienced members on the team and they\
@@ -247,3 +250,33 @@ text15 = ["The Eigth Nation (Seven Nation Army Remix)",
           "The biggest difficulty that I had when completing this project was getting the sound that I wanted out of the software. I always had a precise sound in my head that I wanted to put into the piece but due to the almost unlimited options on the software, it was very difficult to achieve the sounds. However, by simply playing around with the software for hours on end, I gained a much better understanding\
           of how the different settings change the sound of an instrument. I also discovered some instruments that I had never even known about that I was more than happy to use in this project as well as some other projects.",
           "January 2021"];
+          
+text16 = ["FSAE: Accumulator Integration and Assembly", 
+          "-",
+          ["Crimping", "Soldering", "Electronics Integration", "Electronics Testing", "Assembly", "3D Printing", "High Voltage Wiring"],
+          "-",
+          "January 2022 - Current"];
+
+text17 = ["FSAE: Motor Spinning Test", 
+          "-",
+          ["Crimping", "Electronic Circuit Design", "Power Electronics", "Electronics Testing", "Assembly", "High Voltage"],
+          "-",
+          "November 2021 - December 2021"];
+
+text18 = ["FSAE: Shutdown Circuit Assembly and Independent Testing", 
+          "-",
+          ["Soldering", "KiCAD", "Electronics Testing", "Assembly", "Oscilloscopes"],
+          "-",
+          "January 2022"];
+
+text19 = ["FSAE: Brake System Plausibility Device Assembly and Independent Testing", 
+          "-",
+          ["Soldering", "KiCAD", "Electronics Testing", "Assembly", "Oscilloscopes"],
+          "-",
+          "March 2022"];
+
+text20 = ["Auto-calibrated Coil Winding System for B0 Magnetic Field Control", 
+          "-",
+          ["3D Design", "Manufacturing", "Assembly", "Electronics", "Sensor Testing", "3D Printing", "Machining"],
+          "-",
+          "January 2022 - Current"];
